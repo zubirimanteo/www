@@ -57,7 +57,7 @@
   </div><!-- /.container-fluid -->
 </nav>
     
- <div class="row">
+ <div class="row" >
    <div class=col-md-1></div>
   <div class="col-sm-6 col-md-5">
     <div class="thumbnail">
@@ -71,12 +71,53 @@
   </div>
   <div class="col-sm-6 col-md-5">
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img src="images/eontzialogo.png"   alt="EONTZIA"  width="248"  class="image-responsive">
       <div class="caption">
-        <h3 align="center">Thumbnail label</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <h3 align="center"></h3>
+        <p><a href="http://eontzia.zubirimanteoweb.com/" class="btn btn-primary" role="button"> APP </a> <a href="https://github.com/eontzia" class="btn btn-default" role="button">GITHUB</a>
+        <a href="http://eontzia.zubirimanteoweb.com/" class="btn btn-primary" data-toggle="modal" data-target="#myModal" role="button"> DESCRIPCION </a>
+        </p>
+        
       </div>
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">EONTZIA</h4>
+      </div>
+      <div class="modal-body">
+        <p>E-ONTZIA es un sistema portátil de medición de la capacidad de los contenedores de residuos versátil y modular, es decir, se puede moldear a gusto de cada cliente y se adecua a sus necesidades. Como ventaja principal, cabe destacar su bajo coste y su movilidad o adaptabilidad  ya que es ajustable en cualquier tipo de contenedor existente.</p>
+        <p>Con este sistema se pretende mapear y ubicar todos los contenedores de residuos en los que nos interese controlar el estado de llenado, ya sea en grandes ciudades, o bien, en pequeños municipios alejados y perdidos en zonas rurales. En la aplicación web se podrá ver un mapa del área con cada contenedor representado por puntos y diferentes colores para saber su estado de capacidad.</p>
+        <p>Peticiones Http APP EONTZIA<br>
+        La url base será: eontzia.zubirimanteoweb.com/app<br>
+
+        -Realizar una lectura del contenedor:<br>
+        Petición tipo GET<br>
+        URL: /nuevaLectura/[Id dispositivo]/[Volumen]/[fuego]/[bateria]<br>
+        Id_dispositivo → de momento hemos metido en la base de datos dos dispositivos que tienen el id 1 y 2.<br>
+        Volumen → numero entero de 0 a 100. <br>
+        Fuego → 1 --> hay fuego, 0 --> no hay fuego<br>
+        Bateria→ numero entero de 0 a 100.<br><br>
+
+        Ejemplo: eontzia.zubirimanteoweb.com/app/nuevaLectura/1/55/0/99<br>
+
+        -Realizar una lectura de datos guardados en el servidor:<br>
+        URL: /getLecturas/[id dispositivo]<br><br>
+
+        Ejemplo: eontzia.zubirimanteoweb.com/app/getLecturas/1</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   </div>
 </div>
