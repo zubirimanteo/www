@@ -1,3 +1,39 @@
+
 .navbar{
-    background:#97D5C4;
+    background: #337AB7;
+}
+#nav-cont .navbar-brand{
+    color: white;
+    /*font-family: 'Quicksand', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+    */
+    font-family: 'Bangers', cursive;
+	font-size: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#logomodal{
+	height: 50px;
+	width: 40px;
+	float: left;
+}
+ .navbar-default .navbar-nav>li>a{
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 30px;
+}
+
+.dropdown-menu>li>a{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+}
+
+#titulomodal{
+	float: left;
+	line-height:  1.42857143;
+	margin-top: 15px;
+}
+.thumbnail{
+	min-height: 250px;
+	height: auto;
 }
