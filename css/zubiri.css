@@ -61,10 +61,19 @@
 }
 
 #fondo{
-	background-color: black;
+	background-color: #3A94B5;
 }
 
 #botones{
 	text-align: center;
 	margin: auto;
+}
+
+#logocontrolfid{
+	-webkit-border-radius: 10px;
+-webkit-border-top-right-radius: 30px;
+-moz-border-radius: 10px;
+-moz-border-radius-topright: 30px;
+border-radius: 10px;
+border-top-right-radius: 30px;
 }
