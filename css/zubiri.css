@@ -64,7 +64,7 @@
 	background-color: #3A94B5;
 }
 
-#botones{
+.botones{
 	text-align: center;
 	margin: auto;
 }
@@ -76,4 +76,8 @@
 -moz-border-radius-topright: 30px;
 border-radius: 10px;
 border-top-right-radius: 30px;
+}
+.logos{
+	width:400px;
+	height:250px;
 }
