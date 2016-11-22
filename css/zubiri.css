@@ -2,12 +2,25 @@
 .navbar{
     background: #337AB7;
 }
+
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 3px;
+  width: auto;
+  display: inline;
+}
+
 #nav-cont .navbar-brand{
     color: white;
     /*font-family: 'Quicksand', sans-serif;
 	font-family: 'Ubuntu', sans-serif;
     */
-    font-family: 'Bangers', cursive;
+    /*font-family: 'Bangers', cursive;*/
 	font-size: 30px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	padding-left: 0;
@@ -25,12 +38,12 @@
 }
 @media (max-width: 600px) {
 	#nav-cont .navbar-brand{
-		font-size: 22px;
+		font-size: 15px;
 	}
 }
 @media (max-width: 360px) {
 	#nav-cont .navbar-brand{
-		font-size: 17px;
+		font-size: 10px;
 	}
 }
 
