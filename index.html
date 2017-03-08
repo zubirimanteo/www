@@ -77,6 +77,7 @@
 						<p class="botones">
 							<a href="https://kupelike.herokuapp.com" class="btn btn-primary" role="button">Web</a>
 							<a href="https://github.com/Sagardotegi/kupelike-symfony" class="btn btn-default" role="button">GitHub</a>
+							<a class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Descripción</a>
 						</p>
 					</div>
 				</div>
@@ -90,6 +91,63 @@
 							<a href="https://github.com/DW32-DOMOHELP/DomoHelp-Project" class="btn btn-default" role="button">GitHub</a>
 						</p>
 					</div>
+					<!-- Button trigger modal -->
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<img id="logomodal" src="images/KupeLikeLogoT.png">
+									<h4 id="titulomodal" class="modal-title" id="myModalLabel">KupeLike</h4>
+								</div>
+								<div class="modal-body">
+									<p align="justify">
+										&nbsp;&nbsp;KupeLike es un proyecto diseñado para ofrecer todas las facilidades posibles tanto a las sidrerías como a los clientes de las mismas. La aplicación web mostrará un listado, fácilmente accesible, de todas las sidrerías junto a sus respectivas kupelas.  Al acceder a la aplicación web, ésta detectará la localización del usuario y en caso de que éste se encuentre en una sidrería, abrirá automáticamente la página de la misma. En caso contrario será dirigido a la página principal de la aplicación. Como su propio nombre indica (Kupela = Barrica, Like = Gustar), el objetivo principal es el de ofrecer al cliente la posibilidad de votar por aquellas kupelas que más le hayan gustado y ver el nivel de satisfacción del resto de clientes sobre dichas kupelas. La información ofrecida por los clientes, será mostrada tanto en la aplicación web como en unos dispositivos electrónicos conectados vía WiFi que estarán situados en cada una de las kupelas de cada sidrería registrada en nuestra aplicación. Estos dispositivos mostrarán en tiempo real la cantidad de votos de los que dispone la kupela en la que estará situada.
+									</p>
+									<p align="justify">
+										&nbsp;&nbsp;Mediante un sistema de alertas añadido, el cliente tendrá la opción de indicar que desea recibir un aviso al email cuando la kupela que le ha gustado sea embotellada. De esta manera, el sidrero podrá enviar fácilmente dicho aviso a todos los clientes que así lo deseen.
+									</p>
+									<p align="justify">
+										&nbsp;&nbsp;La aplicación también mostrará un mapa donde se mostrarán todas las sidrerías registradas en la aplicación y un mapa interactivo por cada una de ellas, el cual mostrará el recorrido necesario para llegar a la misma. En caso de que el cliente esté accediendo mediante un dispositivo móvil, la aplicación le abrirá el navegador del teléfono con la sidrería como destino.
+									</p>
+									<p align="justify">
+										&nbsp;&nbsp;Por si todo esto no fuera suficiente, también se facilitará la información de contacto de las sidrerías tales como la dirección, el email y el teléfono.
+									</p>
+									<p><strong>Peticiones API KupeLike:</strong>
+										<br> La aplicación dispone de un apartado API a las cuales se le pueden consultar los datos. Las directrices para realizar dichas peticiones son las siguientes:
+										<br> La url base será: https://kupelike.herokuapp.com/es/api
+										<br>
+									</p>
+
+									<p><strong>-Obtener los likes de una kupela:</strong></p>
+									<p>URL: /get-likes/[Id_kupela]
+										<br> Id_kupela → cada kupela dispone de un id único que sirve para realizar esta petición.
+										<br>
+										<br> Ejemplo: https://kupelike.herokuapp.com/es/api/get-likes/14
+									</p>
+
+									<p><strong>-Obtener los datos de una sidrería:</strong></p>
+									<p>URL: /get-sidreria/[Id_sidreria]
+										<br> Id_sidreria → cada sidrería dispone de un id único que sirve para realizar esta petición.
+										<br>
+										<br> https://kupelike.herokuapp.com/es/api/get-sidreria/8
+									</p>
+									
+									<p><strong>-Añadir likes a una kupela:</strong></p>
+									<p>Por motivos de seguridad, este apartado no será explicado.
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+							<!--Fin modal content -->
+						</div>
+						<!--Fin modal-dialog -->
+					</div>
+					<!--Fin modal-fade -->
 				</div>
 			</div>
 			<!--SlaSport-->
